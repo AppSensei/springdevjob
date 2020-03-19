@@ -11,7 +11,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-@CrossOrigin(origins = "http://localhost:8081")
+/*
+@CrossOrigin(origins = "http://angulardevs3springbucket01.s3-website-us-east-1.amazonaws.com/tutorials")
+*/
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api")
 public class TutorialController {
