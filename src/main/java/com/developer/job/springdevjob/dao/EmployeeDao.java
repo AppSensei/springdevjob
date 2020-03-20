@@ -14,6 +14,8 @@ public interface EmployeeDao extends JpaRepository<Employee, Integer> {
 
     List<Employee> findFirstByLastName(String lastname);
 
+    List<Employee> getEmployeeByFirstNameNotNull();
+
     List<Employee> findTop10ByGender(char gender);
 
 }

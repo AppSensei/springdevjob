@@ -16,9 +16,16 @@ public class EmployeeService {
 
     public List<Employee> getAllEmployees() {
         List<Employee> employees = new ArrayList<>();
-        employeeDao.findFirstByLastName("Preusig").forEach(employees::add);
+        employees.addAll(employeeDao.getEmployeeByFirstNameNotNull());
         return employees;
     }
+
+/*    public List<Employee> getAllEmployees() {
+        List<Employee> employees = new ArrayList<>();
+        employeeDao.findFirstByLastName("John").forEach(employees::add);
+        return employees;
+    }*/
+
 
     public List<Employee> getAllEmployeesGenderOf(Character gender) {
         List<Employee> employees = new ArrayList<>();
