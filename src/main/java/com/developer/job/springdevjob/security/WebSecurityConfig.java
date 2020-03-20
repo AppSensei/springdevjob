@@ -1,3 +1,4 @@
+/*
 package com.developer.job.springdevjob.security;
 
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
@@ -21,7 +22,8 @@ import java.util.Arrays;
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
- /*   @Override
+ */
+/*   @Override
     protected void configure(final AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication()
                 .withUser("user1").password(passwordEncoder().encode("user1Pass")).roles("USER")
@@ -29,7 +31,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .withUser("user2").password(passwordEncoder().encode("user2Pass")).roles("USER")
                 .and()
                 .withUser("admin").password(passwordEncoder().encode("adminPass")).roles("ADMIN");
-    }*/
+    }*//*
+
 
     private static final String[] PUBLIC_MATCHERS = {
            "/api/*", "/api/tutorials/*"
@@ -51,6 +54,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     }
 
+*/
 /*    @Bean
     public FilterRegistrationBean corsFilter() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
@@ -64,7 +68,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 CorsFilter(source));
         bean.setOrder(Ordered.HIGHEST_PRECEDENCE);
         return bean;
-    }*/
+    }*//*
+
 
     @Bean
     public PasswordEncoder passwordEncoder() {
@@ -72,3 +77,4 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
 }
+*/
