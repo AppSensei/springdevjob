@@ -26,4 +26,9 @@ public class EmployeeController {
     public List<Employee> getAllEmployees(@PathVariable("male") Character gender) {
         return employeeService.getAllEmployeesGenderOf(gender);
     }
+
+    @GetMapping("/all/{firstName}")
+    public List<Employee> getAllEmployee(@PathVariable("firstName") String firstName) {
+        return employeeService.getAllEmployee(firstName);
+    }
 }

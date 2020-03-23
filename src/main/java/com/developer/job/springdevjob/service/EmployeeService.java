@@ -20,11 +20,11 @@ public class EmployeeService {
         return employees;
     }
 
-/*    public List<Employee> getAllEmployees() {
+    public List<Employee> getAllEmployee(String firstName) {
         List<Employee> employees = new ArrayList<>();
         employeeDao.findFirstByLastName("John").forEach(employees::add);
         return employees;
-    }*/
+    }
 
 
     public List<Employee> getAllEmployeesGenderOf(Character gender) {

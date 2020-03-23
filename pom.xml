@@ -17,6 +17,10 @@
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud.version>Hoxton.SR1</spring-cloud.version>
+        <sonar.projectKey>AppSensei_springdevjob</sonar.projectKey>
+        <sonar.organization>appsensei</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.login>4fcecd7b87f274e8b1acc823b126e5768818f5f6</sonar.login>
     </properties>
 
     <dependencies>
